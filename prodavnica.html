@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="велепродаја ауто делова опреме и козметике">
+  <meta name="author" content="Лука Живановић | sdluka@hotmail.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Ауто гаража</title>
+  <!--stilovi-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--navigacija-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">АУТО ГАРАЖА <i class="fas fa-warehouse"></i></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="galerija.html">Галерија</a></li>
+          <li class="active"><a href="prodavnica.html">Продавница</a></li>
+          <li><a href="kontakt.html">Контакт</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h2>Продавница</h2>
+    </div>
+    <!--forma sa proizvodima-->
+    <form class="prodavnica" id="proizvodi">
+      <div class="row">
+        <!--proizvod 1-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 proizvodProzor">
+          <div class="thumbnail">
+            <h3>СЕТ АЛАТА</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod01.jpg" alt="сет алата">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 7 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="jedan"></label><input type="text" id="jedan" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+        <!--modal za proizvod 1-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Сет алата</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/shop/proizvod01.jpg" alt="сет алата">
+                <p>Укупно 80 алата у 1 металној кутији</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proizvod 2-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <h3>радио ЦД/МП3</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod02.jpg" alt="радио ЦД/МП3">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 8 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="dva"></label><input type="text" id="dva" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal2">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+        <!--modal za proizvod 2-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Радио ЦД/МП3 плејер</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/shop/proizvod02.jpg" alt="радио ЦД/МП3">
+                <p>Модел LAC2900RN, Ауто радио ЦД/МП3 плејер, 53Wx4ch MOSFET Amp, Front AUX</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proizvod 3-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <h3>ПАТОСНИЦЕ</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod03.jpg" alt="патоснице">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 9 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="tri"></label><input type="text" id="tri" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal3">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+        <!--modal za proizvod 3-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal3">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Патоснице</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/shop/proizvod03.jpg" alt="патоснице">
+                <p>4 комада, димензије: 70 x 90 x 4 цм, тежина: 2 кг</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proizvod 4-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <h3>ЛАНЦИ ЗА СНЕГ</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod04.jpg" alt="ланци за снег">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 10 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="cetiri"></label><input type="text" id="cetiri" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal4">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+        <!--modal za proizvod 4-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal4">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Ланци за снег</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/shop/proizvod04.jpg" alt="ланци за снег">
+                <p>ALCO ланци за снег за T-750, 4 комада</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proizvod 5-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <h3>ЗВУЧНИЦИ</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod05.jpg" alt="звичници">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 11 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="pet"></label><input type="text" id="pet" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal5">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+        <!--modal za proizvod 5-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal5">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Звучници</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/shop/proizvod05.jpg" alt="звучници">
+                <p>Ауто звучници Kenwood KFC-E1065 - 10цм, 2-системски</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proizvod 6-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <h3>ЧЕТКА</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod06.jpg" alt="четка">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 12 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="sest"></label><input type="text" id="sest" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal6">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+        <!--modal za proizvod 6-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal6">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Четка</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/shop/proizvod06.jpg" alt="четка">
+                <p>Ротациона четка, закривљена млазница, спојница са стоп вентилом, шампонски штапићи, тежина 4.4 кг</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proizvod 7-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <h3>СИЈАЛИЦЕ</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod07.jpg" alt="сијалице">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 13 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="sedam"></label><input type="text" id="sedam" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal7">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+        <!--modal za proizvod 7-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="myModal7">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Сијалице</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/shop/proizvod07.jpg" alt="сијалице">
+                <p>Ауто сијалице PHILIPS H7 12V 55W PX26d – X-TREME VISION G-force 12972XVGS2, до 130% више светла, отпорна на вибрације до 10G; артикал 12972XVGS2, напон 12V, снага 55W, тип грла PX26d</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--proizvod 8-->
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <h3>НАВИГАЦИЈА</h3>
+            <div class="product-image">
+              <img src="img/shop/proizvod08.jpg" alt="навигација">
+            </div>
+            <div class="caption">
+              <p>Цена:<strong> 14 </strong><span class="glyphicon glyphicon-eur" aria-hidden="true"></span></p>
+              <label for="osam"></label><input type="text" id="osam" size="3" placeholder="0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal8">Детаљи...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--modal za proizvod 8-->
+      <div class="modal fade" tabindex="-1" role="dialog" id="myModal8">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Навигација</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/shop/proizvod08.jpg" alt="навигација">
+              <p>Произвођач: Blueberry, модел: 2GO546, габарити: систем: процесор: Centrality Atlas IV 500MHz, дијагонала екрана: 5.0", резолуција екрана: 480x272px, подржане картице: MicroSD, остало: Audio : FM Radio, повезивање: USB</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">ЗАТВОРИ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--forma za narucivanje-->
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+          <div id="detalji">
+            <h3>Детаљи наруџбенице:</h3>
+            <!--izabir grada-->
+            <div class="grad">
+              <label for="s-grad">Изаберите град за испоруку:</label>
+              <select id="s-grad" class="form-control">
+                <option value="">-- ИЗАБЕРИТЕ --</option>
+                <option value="BG">Београд</option>
+                <option value="NS">Нови Сад</option>
+                <option value="PA">Панчево</option>
+                <option value="DR">други град (20% ПДВ)</option>
+              </select>
+            </div>
+            <!--izabir nacina isporuke-->
+            <div class="grupa metoda">
+              <br><label for="r-metod-preuzimanje">Начин испоруке:</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" value="preuzimanje" name="r_method" id="r-metod-preuzimanje">Лично преузимање (бесплатно)
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" value="kompanijski" name="r_method" id="r-metod-kompanijski">Компанијски превоз (2 евра по производу)
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" value="postexpres" name="r_method" id="r-metod-postexpres">Пост експрес (3 евра по производу)
+                </label>
+              </div>
+            </div>
+          </div>
+          <!--rezultat-->
+          <div class="grupa izracunavanja">
+            <p>
+              <input type="submit" value="Израчунај укупан износ" id="btn-izracunaj">
+              <input type="text" id="txt-izracunaj" placeholder="0.00 евра" readonly>
+            </p>
+            <div id="rezultati">
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--footer-->
+  <div class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 footer-levi">
+          <ul class="list-inline text-center">
+            <li><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center footer-desni">
+          &copy; 2019 <a href="https://www.linkedin.com/in/luka-zivanovic-218565b3/">Лука Живановић</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--skripte-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/prodavnica.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+﻿
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="велепродаја ауто делова опреме и козметике">
+  <meta name="author" content="Лука Живановић | sdluka@hotmail.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Ауто гаража</title>
+  <!--stilovi-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--navigcija-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">АУТО ГАРАЖА <i class="fas fa-warehouse"></i></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="galerija.html">Галерија</a></li>
+          <li><a href="prodavnica.html">Продавница</a></li>
+          <li class="active"><a href="kontakt.html">Контакт</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <!--kontakt podaci-->
+      <div class="col-md-6">
+        <h2 class="page-header">Где се налазимо</h2>
+        <address>
+          <i class="fas fa-map-marked fa-2x" aria-hidden="true"></i> Горанска 353<br><br>
+          <i class="fas fa-phone fa-2x" aria-hidden="true"></i> +381 (0)26 123 45 67<br><br>
+          <i class="fas fa-envelope fa-2x" aria-hidden="true"></i> info@ag.rs<br><br>
+          <i class="fas fa-clock fa-2x" aria-hidden="true"></i> Радним данима: 08-17ч, суботом: 08-14ч<br><br>
+        </address>
+        <!--mapa-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.8928501894993!2d20.89624331504244!3d44.66054079472712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDM5JzM3LjkiTiAyMMKwNTMnNTQuNCJF!5e0!3m2!1ssr!2srs!4v1551822488162"
+          allowfullscreen></iframe>
+      </div>
+      <!--forma za slanje poruke-->
+      <div class="col-md-6">
+        <h2 class="page-header">Контакт форма</h2>
+        <form name="forma" id="forma">
+          <div class="form-group">
+            <label for="firstname">Име и презиме:</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="твоје име и презиме...">
+            <p id="rezIme"></p>
+          </div>
+          <div class="form-group">
+            <label for="address">Имејл:</label>
+            <input type="text" class="form-control" id="email" placeholder="твој имејл...">
+            <p id="rezEmail"></p>
+          </div>
+          <div class="form-group">
+            <label for="address">Веб адреса:</label>
+            <input type="text" class="form-control" id="address" placeholder="твоја веб адреса...">
+            <p id="rezAdresa"></p>
+          </div>
+          <div class="form-group">
+            <label for="telephone1">Телефон:</label>
+            <input type="text" class="form-control" id="telephone1" placeholder="0xx/xxx-xxxx">
+            <p id="rezTelefon1"></p>
+          </div>
+          <div class="form-group">
+            <label for="inputTekst">Порука:</label>
+            <textarea rows="12" class="form-control" id="inputTekst"></textarea>
+            <p id="rezPoruka"></p>
+          </div>
+          <button type="submit" class="btn btn-danger btn-block" onclick="proveri()">Пошаљи</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 footer-levi">
+          <ul class="list-inline text-center">
+            <li><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center footer-desni">
+          &copy; 2019 <a href="https://www.linkedin.com/in/luka-zivanovic-218565b3/">Лука Живановић</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--skripte-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/kontakt.js"></script>
+</body>
+
+</html>

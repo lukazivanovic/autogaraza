@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="велепродаја ауто делова опреме и козметике">
+  <meta name="author" content="Лука Живановић | sdluka@hotmail.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Ауто гаража</title>
+  <!--stilovi-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--navigacija-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">АУТО ГАРАЖА <i class="fas fa-warehouse"></i></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="galerija.html">Галерија</a></li>
+          <li><a href="prodavnica.html">Продавница</a></li>
+          <li><a href="kontakt.html">Контакт</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="page-header">
+      <h2>Галерија слика</h2>
+    </div>
+    <!--galerija sa slikama-->
+    <div class="row">
+      <div class="col-md-12 galerija">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+          <!--slike-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/carousel/gallery01.jpg" class="img-responsive" alt="унутрашњи изглед гараже">
+              <div class="carousel-caption">
+                <h3>Унутрашњи изглед гараже</h3>
+                <p>Photo by Alex Suprun on Unsplash</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/carousel/gallery02.jpg" class="img-responsive" alt="поправка аутомобила">
+              <div class="carousel-caption">
+                <h3>Поправка аутомобила</h3>
+                <p>Photo by whereslugo on Unsplash</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/carousel/gallery03.jpg" class="img-responsive" alt="неки од аутомобила за продају">
+              <div class="carousel-caption">
+                <h3>Неки од аутомобила за продају</h3>
+                <p>Photo by Angello Lopez on Unsplash</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/carousel/gallery04.jpg" class="img-responsive" alt="сиви Mercedes-Benz">
+              <div class="carousel-caption">
+                <h3>Сиви Mercedes-Benz</h3>
+                <p>Photo by Hayes Potter on Unsplash</p>
+              </div>
+            </div>
+          </div>
+          <!--dugmad za upravljanje-->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">претходно</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">следеће</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <div class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 footer-levi">
+          <ul class="list-inline text-center">
+            <li><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center footer-desni">
+          &copy; 2019 <a href="https://www.linkedin.com/in/luka-zivanovic-218565b3/">Лука Живановић</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--skripte-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

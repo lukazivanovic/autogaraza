@@ -1,0 +1,228 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding-top: 50px;
+  background-color: #d6d6d6;
+  color: #000;
+}
+
+/****************NAVIGACIJA****************/
+.navbar-default,
+.dropdown-menu {
+  background: rgb(163, 9, 9);
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand,
+.dropdown-menu li a {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover,
+.dropdown-menu>li>a:hover {
+  color: rgb(0, 0, 0);
+  background-color: #d6d6d6;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover,
+.dropdown-menu>li>a:hover,
+.btn-default:hover {
+  color: #000;
+  background-color: #d6d6d6;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #000;
+  background-color: #d6d6d6;
+}
+
+/****************VELIKA SLIKA NA POCETNOJ STRANI****************/
+#cover {
+  background-color: #666;
+  background-image: url("../img/overlay.png"), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url("../img/cover.jpg");
+  background-attachment: scroll, scroll, fixed;
+  background-position: top left, top, center center;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: auto, auto, cover;
+  color: #fff;
+  height: 400px;
+  text-align: center;
+}
+
+#banner {
+  color: #fff;
+  height: 100px;
+  width: 400px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#banner h1 {
+  margin-bottom: 15px;
+}
+
+#banner p {
+  margin-bottom: 40px;
+}
+
+#content {
+  padding-top: 30px;
+}
+
+/****************INFORMACIJE I PROMOCIJE****************/
+.row.equal-cols {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row.equal-cols:before,
+.row.equal-cols:after {
+  display: block;
+}
+
+.row.equal-cols>[class*='col-'] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.row.equal-cols>[class*='col-']>* {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+#onamaSlika {
+  width: 100%;
+  height: auto;
+}
+
+/****************CRVENA TRAKA****************/
+#brojevi {
+  background-color: rgb(163, 9, 9);
+}
+
+#brojevi div {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+/****************GALERIJA****************/
+.galerija {
+  padding: 50px 50px 100px 50px;
+}
+
+.carousel-inner>.item>img {
+  width: auto;
+  max-height: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/****************KONTAKT FORMA****************/
+form {
+  padding-bottom: 50px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#forma {
+  margin-bottom: 60px;
+}
+
+/****************MAPA****************/
+iframe {
+  border: 0;
+  width: 100%;
+  height: 410px;
+  padding-bottom: 60px;
+}
+
+/****************PRODAVNICA****************/
+.modal-body img {
+  height: 200px;
+  width: auto;
+}
+
+.product-image {
+  height: 200px;
+  width: auto;
+  overflow: hidden;
+}
+
+.product-image img {
+  height: auto;
+  width: 100%;
+}
+
+/****************FOOTER****************/
+.panel-footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.panel-footer a {
+  color: rgb(163, 9, 9);
+}
+
+.panel-footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-levi {
+  padding-top: 10px;
+}
+
+.footer-desni {
+  padding: 20px 0px;
+}
